@@ -1,15 +1,14 @@
 from selenium import webdriver
-import time
-import xlwings
-import unittest
-import re
-import os
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
+import time
+import xlwings
+import unittest
+import re
+import os
 
 while True:
     #open page
@@ -19,7 +18,6 @@ while True:
     driver.implicitly_wait(5)
     driver.get(webpage)
     webpage = driver.page_source
-    #driver.close()
 
     #sign in
     driver.find_element_by_xpath('//*[@id="app"]/div/header/div/div[1]/span[2]/div[1]/div[2]/nav/a[1]').click()
